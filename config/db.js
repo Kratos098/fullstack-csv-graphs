@@ -7,14 +7,24 @@ const connectDB = async() => {
         await mongoose.connect(
             db, 
             {
-                useUnifiedTopology: true,
-                useNewUrlParser: true
+                useNewUrlParser: true,
+                useUnifiedTopology: true
             }
         );
         console.log("MongoDB is connected!")
     }
     catch(err) {
+        console.log("==================== db ====================")
+        console.log(db);
+        console.log("==================== err ====================")
+        console.log(err);
+        console.log("==================== err.reason ====================")
+        console.log(err.reason);
+        console.log("==================== err.reason.servers ====================")
+        console.log(err.reason.servers);
+        console.log("==================== err.message ====================")
         console.error(err.message);
+        console.log("==================== EXITING ====================")
         process.exit(1);
     }
 }

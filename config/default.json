@@ -1,3 +1,3 @@
 {
-    "mongoURI": "mongodb+srv://MBhaskaran:Welcome7atlas>@maindb.snjhi.mongodb.net/MainDB?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://MBhaskaran:Welcome7atlas>@maindb.snjhi.mongodb.net?retryWrites=true&w=majority"
 }

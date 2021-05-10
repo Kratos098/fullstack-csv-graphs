@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
     Book.find()
       .then(books => res.json(books))
       .catch(err => res.status(404).json({ nobooksfound: 'No Books found' }));
-});
+}); 
 
 // @route GET api/books/:id
 // @description Get single book by id
